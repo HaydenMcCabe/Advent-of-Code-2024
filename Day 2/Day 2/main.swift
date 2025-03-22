@@ -87,8 +87,11 @@ rowLoop2: for row in dataRows {
                 continue rowLoop2
             } else {
                 errorIgnored = true
-                current = next
+                // current = next
                 next += 1
+                if next == values.count {
+                    
+                }
                 continue deltaLoop
             }
         }
